@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #9c8f8f;
+}
+
+#area-cabecalho {
+    background: rgb(193, 243, 77);
+    padding: 15px;
+    text-align: center;
+}
+
+#area-logo, #area-menu {
+    padding: 10px;
+}
+
+#area-principal {
+
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#area-postagens{
+    width: 660px;
+    float: left;
+    padding: 8px;
+}
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #cbcbcb;
+}
+#area-rodape {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: #818181;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:link, a:visited {
+    color: orange;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+    color: white;
+    padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+    color: orange;
+    background: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: black;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: orange;
+}
+
+h3 {
+    color: white;
+    background: #858585;
+    padding: 5px;
+}
+
+.card-titulo {
+    text-align: center;
+}
+
+.branco {
+    color: white;
+}
+
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }

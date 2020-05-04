@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Cavaleiro</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
+
+</head>
+
+<body>
+
+    <div id="area-cabecalho">
+
+        <div id="area-logo">
+            <h1>Cavaleiro<span class="branco">Game</span></h1>
+        </div>
+        <div id="area-menu">
+            <a href="/">Home</a>
+            <a href="download">Baixar</a>
+            <a href="tutorial">Tutorial</a>
+            <a href="login">Login</a>
+            <a href="cadastro">Cadastro</a>
+            
+        </div>
+    </div>
+
+    <div class="flex-box">
+
+        
+            <div class="container" style="width: 60%; padding-bottom: 30px;">
+        
+              
+        
+                <div>
+                
+                    <form method="post" action="/post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="titulo" placeholder="Título *">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="autor" placeholder="Autor*">
+                        </div>
+                        
+                        <textarea id="summernote" type="text" class="form-control" name="post" placeholder="Texto *"></textarea>
+        
+                        <small class="form-text text-muted">(*) Campos obrigatórios</small>
+                   
+                        <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Publicar</button>
+                        <a href="novoPost" class="btn btn-light" role="button" style="margin-top: 10px;">Cancelar</a>
+        
+                    </form>
+                </div>
+                
+
+            </div>
+        
+           
+        
+    </div>
+    <div id="area-rodape">
+        Todos os direitos Reservados
+    </div>
+
+    <script> $('#summernote').summernote({
+        placeholder: 'Texto *',
+        tabsize: 2,
+        height: 300
+    });
+    </script>
+
+</body>
+
+
+
+</html>
